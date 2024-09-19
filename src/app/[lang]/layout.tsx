@@ -5,42 +5,42 @@ import './globals.css'
 const primary = localFont({
   src: [
     {
-      path: './fonts/PlusJakartaSans-Regular.ttf',
+      path: './fonts/f-regular.ttf',
       weight: '400',
       style: 'normal'
     },
     {
-      path: './fonts/PlusJakartaSans-Regular.ttf',
+      path: './fonts/f-regular.ttf',
       weight: '400',
       style: 'italic'
     },
     {
-      path: './fonts/PlusJakartaSans-Medium.ttf',
+      path: './fonts/f-medium.ttf',
       weight: '500',
       style: 'normal'
     },
     {
-      path: './fonts/PlusJakartaSans-MediumItalic.ttf',
+      path: './fonts/f-mediumitalic.ttf',
       weight: '500',
       style: 'italic'
     },
     {
-      path: './fonts/PlusJakartaSans-Semibold.ttf',
+      path: './fonts/f-semibold.ttf',
       weight: '600',
       style: 'normal'
     },
     {
-      path: './fonts/PlusJakartaSans-SemiboldItalic.ttf',
+      path: './fonts/f-semibolditalic.ttf',
       weight: '600',
       style: 'italic'
     },
     {
-      path: './fonts/PlusJakartaSans-Bold.ttf',
+      path: './fonts/f-bold.ttf',
       weight: '700',
       style: 'normal'
     },
     {
-      path: './fonts/PlusJakartaSans-BoldItalic.ttf',
+      path: './fonts/f-bolditalic.ttf',
       weight: '700',
       style: 'italic'
     }
@@ -48,7 +48,7 @@ const primary = localFont({
   variable: '--font-primary-sans'
 })
 const vavob = localFont({
-  src: './fonts/VAVOB.ttf',
+  src: './fonts/vavob.ttf',
   variable: '--font-vavob',
   weight: '700'
 })
@@ -72,5 +72,5 @@ export default function RootLayout({
 }
 
 export const metadata = {
-  title: 'Speeds Chain - High-speed  TON earning'
+  title: 'speeds Chain - High-speed  TON earning'
 }
