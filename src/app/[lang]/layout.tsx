@@ -47,11 +47,16 @@ const primary = localFont({
   ],
   variable: '--font-primary-sans'
 })
-// const vavob = localFont({
-//   src: './fonts/vavob.ttf',
-//   variable: '--font-vavob',
-//   weight: '700'
-// })
+const vavob = localFont({
+  src: [
+    {
+      path: './fonts/f-vavob.ttf',
+      weight: '700',
+      style: 'normal'
+    }
+  ],
+  variable: '--font-vavob'
+})
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }))
@@ -66,7 +71,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang={params.lang}>
-      <body className={`${primary.variable} antialiased min-h-screen`}>{children}</body>
+      <body className={`${primary.variable} ${vavob.variable} antialiased min-h-screen`}>{children}</body>
     </html>
   )
 }
