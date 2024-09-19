@@ -1,4 +1,4 @@
-import { ICArrow } from '../icon/ICArrow'
+import { ICArrow } from './icon/ICArrow'
 
 interface ButtonProps {
   children: React.ReactNode

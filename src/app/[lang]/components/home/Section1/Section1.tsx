@@ -1,6 +1,8 @@
 import image from './images/image.png'
 import light from './images/light.png'
-import Button from '../../common/Button'
+// import Button from '../../common/Button'
+import { ButtonPrimary } from '../../common/ButtonPrimary/ButtonPrimary'
+import { ICArrow } from '../../common/icon/ICArrow'
 
 export const Section1 = () => {
   return (
@@ -12,16 +14,17 @@ export const Section1 = () => {
             High-speed <span className="font-bold italic text-[#FCB127]">TON</span> earning
           </h3>
           <div className="flex items-center justify-center gap-4 lg:mb-10 lg:justify-start">
-            <Button
-              hasIcon
-              className="w-[143px] lg:w-[170px]"
-              borderGradient="border-image-source: linear-gradient(90.36deg, rgba(255, 255, 255, 0.08) 2.12%, rgba(249, 246, 157, 0.8) 37.27%, rgba(255, 255, 255, 0.008) 113.19%)"
-            >
-              Livepaper
-            </Button>
-            <Button bg="#363030" className="!text-[#FFF9BB]">
+            <ButtonPrimary contentClassName="w-full px-4" className="w-[143px] lg:w-[170px]">
+              <div className="flex items-center justify-between gap-2">
+                Livepaper
+                <span className="text-[#FFF9BB]">
+                  <ICArrow />
+                </span>
+              </div>
+            </ButtonPrimary>
+            <ButtonPrimary black contentClassName="text-[#FFF9BB]">
               Whitepaper
-            </Button>
+            </ButtonPrimary>
           </div>
           <p className="invisible text-[14px] font-bold text-neutral-300 lg:visible">
             Golden opportunity: Earn free TON today

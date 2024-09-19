@@ -1,8 +1,9 @@
+import { ButtonPrimary } from '../../common/ButtonPrimary/ButtonPrimary'
+import { ICArrow } from '../../common/icon/ICArrow'
 import { Global } from './icons/Global'
 import { Hambuger } from './icons/Hambuger'
 import { Sun } from './icons/Sun'
 import logo from './images/logo.png'
-import Button from '../../common/Button'
 
 export const Header = () => {
   return (
@@ -29,14 +30,18 @@ export const Header = () => {
                   <Global />
                 </div>
                 <Hambuger />
-                <Button
-                  hasIcon
-                  className="max-w-[175px] md:w-[183px] !text-[#FFF9BB]"
-                  bg="#363030"
-                  // borderGradient="linear-gradient(90.36deg, rgba(255, 255, 255, 0.08) 2.12%, rgba(249, 246, 157, 0.8) 37.27%, rgba(255, 255, 255, 0.008) 113.19%)"
+                <ButtonPrimary
+                  black
+                  contentClassName="w-full px-4 text-[#FFF9BB]"
+                  className="max-w-[175px] md:w-[183px] md:max-w-[initial]"
                 >
-                  Launch Game
-                </Button>
+                  <div className="flex items-center justify-between gap-2">
+                    Launch Game
+                    <span className="text-[#FFF9BB]">
+                      <ICArrow />
+                    </span>
+                  </div>
+                </ButtonPrimary>
               </div>
             </div>
           </div>

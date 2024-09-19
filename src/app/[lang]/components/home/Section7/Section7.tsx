@@ -1,4 +1,4 @@
-import image from './images/image.png';
+import image from './images/image.png'
 
 export const Section7 = () => {
   return (
@@ -16,10 +16,10 @@ export const Section7 = () => {
             We are here to provide all you need for the best trading experience and optimal advances on TON blockchain.
           </p>
         </div>
-        <div>
+        <div className="flex justify-center lg:justify-start">
           <img src={image.src} alt="Image" />
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
