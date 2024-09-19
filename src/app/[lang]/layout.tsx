@@ -5,42 +5,42 @@ import './globals.css'
 const primary = localFont({
   src: [
     {
-      path: './fonts/f-regular.ttf',
+      path: './fonts/jakarta-regular.ttf',
       weight: '400',
       style: 'normal'
     },
     {
-      path: './fonts/f-regular.ttf',
+      path: './fonts/jakarta-italic.ttf',
       weight: '400',
       style: 'italic'
     },
     {
-      path: './fonts/f-medium.ttf',
+      path: './fonts/jakarta-medium.ttf',
       weight: '500',
       style: 'normal'
     },
     {
-      path: './fonts/f-mediumitalic.ttf',
+      path: './fonts/jakarta-mediumitalic.ttf',
       weight: '500',
       style: 'italic'
     },
     {
-      path: './fonts/f-semibold.ttf',
+      path: './fonts/jakarta-semibold.ttf',
       weight: '600',
       style: 'normal'
     },
     {
-      path: './fonts/f-semibolditalic.ttf',
+      path: './fonts/jakarta-semibolditalic.ttf',
       weight: '600',
       style: 'italic'
     },
     {
-      path: './fonts/f-bold.ttf',
+      path: './fonts/jakarta-bold.ttf',
       weight: '700',
       style: 'normal'
     },
     {
-      path: './fonts/f-bolditalic.ttf',
+      path: './fonts/jakarta-bolditalic.ttf',
       weight: '700',
       style: 'italic'
     }
@@ -50,7 +50,7 @@ const primary = localFont({
 const vavob = localFont({
   src: [
     {
-      path: './fonts/f-vavob.ttf',
+      path: './fonts/jakarta-vavob.ttf',
       weight: '700',
       style: 'normal'
     }
