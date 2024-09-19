@@ -8,6 +8,9 @@
   --text-primary: #ffa506;
   --text-light: #fff9bb;
   --text-cc: #ccc;
+  --gray33: #333333;
+  --gray36: #363030;
+  --grayd6: #d6d6d6;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,6 +18,8 @@
     --background: #1d1a1a;
     --foreground: #eeecec;
     --text-primary: #ffa506;
+    --text-light: #fff9bb;
+    --text-cc: #ccc;
     --gray33: #333333;
     --gray36: #363030;
     --grayd6: #d6d6d6;

@@ -1,47 +1,31 @@
-import { getDictionary } from '../../../get-dictionary'
 import { Locale } from '../../../i18n-config'
-import PlayForFree from '@/public/PlayForFree.png'
-import TapToEarn from '@/public/TapToEarn.png'
-import TON from '@/public/TON.png'
-import WhyChooseUs from './components/home/WhyChooseUs'
-import HeroSection from './components/home/HeroSection'
+import { Header } from './components/home/Header/Header'
+import { Section1 } from './components/home/Section1/Section1'
+import { Section2 } from './components/home/Section2/Section2'
+import { Section3 } from './components/home/Section3/Section3'
+import { Section4 } from './components/home/Section4/Section4'
+import { Section5 } from './components/home/Section5/Section5'
 import { Section6 } from './components/home/Section6/Section6'
 import { Section7 } from './components/home/Section7/Section7'
-import FeatureSection from './components/home/FeatureSection'
+import { Section8 } from './components/home/Section8/Section8'
 
-export default async function IndexPage({
-  params: { lang }
-}: Readonly<{
+export default async function IndexPage({}: // params: { lang }
+Readonly<{
   params: { lang: Locale }
 }>) {
-  const dictionary = await getDictionary(lang)
+  // const dictionary = await getDictionary(lang)
 
   return (
     <div className="flex flex-col justify-center items-center font-[family-name:var(--font-primary-sans)] relative overflow-x-hidden">
-      <HeroSection />
-      <h2 className="mb-4 text-center text-[32px] font-bold uppercase md:mb-20 md:text-[64px]">
-        <span className="text-white">Key </span>
-        <span className="text-[#FFA506]">Feature</span>
-      </h2>
-      <FeatureSection title={dictionary['play'].title} desc={dictionary['play'].desc} img={PlayForFree} customClass="lg:mt-8 mt-3" />
-      <FeatureSection
-        reverse
-        title={dictionary['tap'].title}
-        desc={dictionary['tap'].desc}
-        img={TapToEarn}
-        customClass="lg:mt-8 mt-10"
-      />
-      <FeatureSection
-        title={dictionary['ton'].title}
-        desc={dictionary['ton'].desc}
-        img={TON}
-        customClass="lg:mt-8 mt-10"
-        titleBtn="Join Now"
-      />
-
-      <WhyChooseUs />
+      <Header />
+      <Section1 />
+      <Section2 />
+      <Section3 />
+      <Section4 />
+      <Section5 />
       <Section6 />
       <Section7 />
+      <Section8 />
     </div>
   )
 }

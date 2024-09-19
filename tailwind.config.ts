@@ -28,7 +28,7 @@ const config: Config = {
     container: {
       center: true,
       padding: {
-        DEFAULT: '0', // Default padding for all screens
+        DEFAULT: '0.75rem', // Default padding for all screens
         sm: '2rem' // Padding for small screens
       }
     },

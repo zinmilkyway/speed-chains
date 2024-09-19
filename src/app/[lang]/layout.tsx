@@ -1,13 +1,51 @@
 import localFont from 'next/font/local'
-import './globals.css'
 import { i18n, Locale } from '../../../i18n-config'
-import Header from './components/common/Header'
-import Footer from './components/common/Footer'
+import './globals.css'
 
 const primary = localFont({
-  src: './fonts/PlusJakartaSans-Regular.ttf',
-  variable: '--font-primary-sans',
-  weight: '400'
+  src: [
+    {
+      path: './fonts/PlusJakartaSans-Regular.ttf',
+      weight: '400',
+      style: 'normal'
+    },
+    {
+      path: './fonts/PlusJakartaSans-Regular.ttf',
+      weight: '400',
+      style: 'italic'
+    },
+    {
+      path: './fonts/PlusJakartaSans-Medium.ttf',
+      weight: '500',
+      style: 'normal'
+    },
+    {
+      path: './fonts/PlusJakartaSans-MediumItalic.ttf',
+      weight: '500',
+      style: 'italic'
+    },
+    {
+      path: './fonts/PlusJakartaSans-Semibold.ttf',
+      weight: '600',
+      style: 'normal'
+    },
+    {
+      path: './fonts/PlusJakartaSans-SemiboldItalic.ttf',
+      weight: '600',
+      style: 'italic'
+    },
+    {
+      path: './fonts/PlusJakartaSans-Bold.ttf',
+      weight: '700',
+      style: 'normal'
+    },
+    {
+      path: './fonts/PlusJakartaSans-BoldItalic.ttf',
+      weight: '700',
+      style: 'italic'
+    }
+  ],
+  variable: '--font-primary-sans'
 })
 const vavob = localFont({
   src: './fonts/VAVOB.ttf',
@@ -28,11 +66,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang={params.lang}>
-      <body className={`${primary.variable} ${vavob.variable} antialiased min-h-screen`}>
-        <Header />
-        {children}
-        <Footer />
-      </body>
+      <body className={`${primary.variable} ${vavob.variable} antialiased min-h-screen`}>{children}</body>
     </html>
   )
 }
