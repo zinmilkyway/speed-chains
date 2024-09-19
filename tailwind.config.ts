@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss'
-import defaultTheme from 'tailwindcss/defaultTheme'
+// import defaultTheme from 'tailwindcss/defaultTheme'
 
 const config: Config = {
   content: [
@@ -20,10 +20,20 @@ const config: Config = {
         graycc: 'var(--graycc)'
       }
     },
-    screens: {
-      desktop: '1440px',
-      mob: '375px',
-      ...defaultTheme.screens
+    // screens: {
+    //   desktop: '1440px',
+    //   mob: '375px',
+    //   ...defaultTheme.screens
+    // },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '0', // Default padding for all screens
+        sm: '2rem' // Padding for small screens
+      }
+    },
+    dropShadow: {
+      '3xl': '0px 0px 20px rgba(236, 202, 111, 0.36)'
     }
   },
   plugins: []

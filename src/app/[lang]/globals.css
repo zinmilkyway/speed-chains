@@ -6,7 +6,7 @@
   --background: #eeecec;
   --foreground: #1d1a1a;
   --text-primary: #ffa506;
-  --text-light: #FFF9BB;
+  --text-light: #fff9bb;
   --text-cc: #ccc;
 }
 
@@ -17,7 +17,7 @@
     --text-primary: #ffa506;
     --gray33: #333333;
     --gray36: #363030;
-    --grayd6: #D6D6D6;
+    --grayd6: #d6d6d6;
   }
 }
 
@@ -35,7 +35,16 @@ body {
 }
 
 .border-primary {
-  border-image-source: linear-gradient(90.36deg, rgba(255, 255, 255, 0.08) 2.12%, rgba(249, 246, 157, 0.8) 37.27%, rgba(255, 255, 255, 0.008) 113.19%);
+  background: linear-gradient(0deg, #363030, #363030),
+    linear-gradient(
+      88.97deg,
+      rgba(255, 255, 255, 0.02) -24.48%,
+      rgba(255, 206, 115, 0.137998) 6.85%,
+      rgba(255, 206, 115, 0.2) 51.91%,
+      rgba(255, 206, 115, 0.0956863) 123.99%,
+      rgba(255, 255, 255, 0.002) 169.83%
+    );
+
   border-image-slice: 1;
   border: solid 1px;
 }

@@ -8,24 +8,24 @@ import { ICMenu } from '../icon/ICMenu'
 
 const Header = () => {
   return (
-    <header>
+    <header className="container mx-auto">
       <div
         className="2xl:max-w-full 2xl:mx-52 mx-3 md:mx-16 desktop:max-w-[1040px] desktop:mx-auto
        mt-9 bg-gray36 bg-opacity-50 rounded-[40px] px-6 flex items-center justify-between
        font-[family-name:var(--font-primary-sans)]"
       >
         <Image src={Logo} alt="logo" className="lg:h-full h-12 w-auto" priority />
-        <div className="flex items-center gap-10">
-          <button>
+        <div className="flex items-center gap-6 lg:gap-10">
+          <button className='lg:block hidden'>
             <ICSun />
           </button>
-          <button>
+          <button className='lg:block hidden'>
             <ICTranslate />
           </button>
           <button>
             <ICMenu />
           </button>
-          <Button type="button" hasIcon>
+          <Button type="button" hasIcon bg="#363030" className="!text-[#FFF9BB] h-10 lg:h-12">
             Launch Game
           </Button>
         </div>
