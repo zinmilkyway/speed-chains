@@ -4,7 +4,7 @@ import Button from '../../common/Button'
 
 export const Section1 = () => {
   return (
-    <div className="container py-20">
+    <div className="container lg:py-20 py-6">
       <div className="grid grid-cols-1 gap-3 lg:grid-cols-2 lg:gap-6">
         <div className="relative z-[1] text-center lg:text-left">
           <h2 className="mb-2 text-[48px] font-bold leading-none text-white lg:mb-4 lg:text-[100px]">Speeds Chain</h2>
