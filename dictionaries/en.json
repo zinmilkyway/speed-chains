@@ -1,0 +1,31 @@
+{
+  "play": {
+    "title": "Play for Free",
+    "desc": [
+      "Experience the thrill of gaming without spending a dime.",
+      "Dive into our immersive world and start your journey to financial freedom.",
+      "No upfront costs, no hidden fees."
+    ]
+  },
+  "tap": {
+    "title": "Tap to Earn",
+    "desc": [
+      "Earn $TON simply by playing your favorite games.",
+      "The more you play, the more you earn.",
+      "Convert your in-game achievements into real-world rewards."
+    ]
+  },
+  "ton": {
+    "title": "TON Speed Chain ecosystem",
+    "desc": [
+      "Be part of the future of gaming.",
+      "Join a community of passionate gamers.",
+      "Secure your financial future with $TON."
+    ]
+  },
+
+  "start-playing": "Start Playing",
+  "key-feature": "Key Feature",
+  "join-community": "Join our community",
+  "copyright": "2024 Speed Chains. All rights reserved"
+}
